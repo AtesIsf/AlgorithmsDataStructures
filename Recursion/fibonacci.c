@@ -8,15 +8,15 @@ void fibonacci(int a, int b, int n)
 {
     int sum = a + b;
     printf("%d ", b);
-    if (sum<=10)
+    if (sum<=n)
     {
-        fibonacci(b, sum, n+1);
+        fibonacci(b, sum, n);
     }
 }
 
 int main()
 {
-    fibonacci(0, 1, 1);
+    fibonacci(0, 1, 10);
     printf("\n");
     return 0;
 }
